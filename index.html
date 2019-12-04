@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contiguous Allocation</title>
+
+    <meta charset="UTF-8" />
+  </head>
+
+  <body style="margin-left:24px">
+    <h2>2015104215 컴퓨터공학과 장재혁</h2>
+    <div id="app"></div>
+    <table>
+      <tr>
+        <td>
+          <p style="margin-right: 10px">메모리의 크기</p>
+        </td>
+        <td>
+          <input type="number" id="numMemory" style="width: 50px" value="256" />
+        </td>
+        <td>
+          <p style="margin-left: 10px">할당 순서</p>
+        </td>
+        <td>
+          <input
+            type="text"
+            id="strSequence"
+            style="width: 300px"
+            value="1 64 2 64 3 32 4 16 1 0 3 0 5 32 2 0"
+          />
+          <input
+            type="button"
+            value="생성"
+            name="startAllocate"
+            id="startAllocate"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <div id="AllocateTable" style="margin-top: 15px;"></div>
+
+    <noscript>주의!: 자바스크립트 파일을 실행해야합니다.</noscript>
+    <script src="./index.js"></script>
+    <script src="./Allocate.js"></script>
+    <script src="./makeHTML.js"></script>
+  </body>
+</html>
